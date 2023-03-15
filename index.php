@@ -52,7 +52,7 @@
 
     <script>
 function redirectgame(){
-	location.replace('http://login-form-18/login-form-18/theball.html');
+	location.replace('theball.html');
 }
 
 function tests(){
@@ -69,7 +69,7 @@ var id="admin"
 
 if(name ==inname && id ==inpass){
 
-	location.replace('http://login-form-18/login-form-18/update.php');
+	location.replace('update.php');
 }
 else{
 

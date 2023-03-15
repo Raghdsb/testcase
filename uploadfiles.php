@@ -10,7 +10,7 @@ $uploadPath = $currentDirectory . $uploadDirectory . basename($fileName);
 if (isset($_POST['submit'])) {
  $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
     if ($didUpload) {
-      header(" http://localhost/login-form-18/login-form-18/index.php");
+      header("index.php");
     } 
 }
 
