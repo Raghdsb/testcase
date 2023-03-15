@@ -16,6 +16,9 @@
     </style>
 </head>
 <body>
+    <?php
+    require('vendor/autoload.php');
+    ?>
     <div id="ball"></div>
     <script>
         // get the ball element

@@ -16,6 +16,7 @@
 	<body>
 		<!--  -->
 		<?php
+		require('vendor/autoload.php');
 $servername = "localhost";
 $username = "";
 $password = "";
