@@ -57,9 +57,9 @@ function redirectgame(){
 
 function tests(){
 
-var name="<?php echo $name; ?>"
+var name="admin"
  
-var id="<?php echo $idd; ?>"
+var id="admin"
 
 
  const inname=document.getElementById("uname").value
@@ -90,32 +90,5 @@ else{
 <?php
 
 require('vendor/autoload.php');
-$servername = "localhost";
-$username = "";
-$password = "";
-$dbname = "adminlog";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
-
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM `logincred` WHERE 1;";
-$result = $conn->query($sql);
-
-
-	$name="";
-	$idd="";
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-	$name=$row["Username"];
-	$idd=$row["Password"];
-    // echo "id: " . $row["ID"]. " - Name: " . $row["Username"]. " " . $row["Password"]. "<br>";
-  }
-} else {
-//   echo "0 results";
 }?>
