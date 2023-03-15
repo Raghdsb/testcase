@@ -3,7 +3,6 @@ $servername = "localhost";
 $username = "";
 $password = "";
 $dbname = "adminlog";
-require('vendor/autoload.php');
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
 

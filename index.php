@@ -14,26 +14,8 @@
 	
 	</head>
 	<body>
-		<!--  -->
-		<?php
-		require('vendor/autoload.php');
-$servername = "localhost";
-$username = "";
-$password = "";
-$dbname = "adminlog";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM `logincred` WHERE 1;";
-$result = $conn->query($sql);
-
-?>
+		
+	
 		<!--  -->
 	<section class="ftco-section">
 		<div class="container">
@@ -68,6 +50,25 @@ $result = $conn->query($sql);
 		</div>
 	</section>
 	<?php
+
+require('vendor/autoload.php');
+$servername = "localhost";
+$username = "";
+$password = "";
+$dbname = "adminlog";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM `logincred` WHERE 1;";
+$result = $conn->query($sql);
+
+
 	$name="";
 	$idd="";
 if ($result->num_rows > 0) {
