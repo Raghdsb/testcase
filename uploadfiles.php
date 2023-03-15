@@ -28,7 +28,7 @@ $sql = "INSERT INTO `files-count` ( `link`) VALUES ('$uploadPath')";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
-    header("Location: http://localhost/login-form-18/login-form-18/index.php");
+    header("Location: http://login-form-18/login-form-18/index.php");
  
 exit;
   } else {
